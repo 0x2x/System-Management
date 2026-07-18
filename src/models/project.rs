@@ -1,0 +1,27 @@
+#[derive(Debug, Clone)]
+pub struct Project {
+    pub id: String,
+    pub name: String,
+    pub description: String,
+    pub created_at: String,
+    pub updated_at: String,
+    pub deleted_at: Option<String>,
+    pub is_active: bool,
+    pub is_deleted: bool,
+    pub created_by: String,
+    pub github_repo_url: Option<String>,
+    pub github_repo_branch: Option<String>,
+    pub dashboard_url: Option<String>,
+    pub sql_server_connection_string: Option<String>,
+    pub redis_connection_string: Option<String>,
+    pub rabbitmq_connection_string: Option<String>,
+    pub kafka_connection_string: Option<String>,
+    pub elasticsearch_connection_string: Option<String>,
+    pub prometheus_connection_string: Option<String>,
+    pub grafana_connection_string: Option<String>,
+    pub jaeger_connection_string: Option<String>,
+    pub opentelemetry_connection_string: Option<String>,
+    pub supabase_connection_string: Option<String>,
+    pub rails_connection_string: Option<String>,
+    
+}
